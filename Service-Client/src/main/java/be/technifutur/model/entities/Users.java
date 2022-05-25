@@ -19,21 +19,21 @@ import java.util.Date;
 public class Users {
 
     @Id
-    //PK générée auto via la startegie IDENTITY
+    //PK générée auto via la strategie IDENTITY
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = false, length = 50)
     private String nom;
 
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = false, length = 50)
     private String prenom;
 
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = false, length = 80)
     private String adresse;
 
     @NotNull
@@ -41,11 +41,11 @@ public class Users {
     private Date dateNaissance;
 
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = false, length = 13)
     private String numeroTel;
 
     @NotNull
-    @Column(nullable = false)
+    @Column(nullable = false, length = 50)
     private String email;
 
 }
