@@ -1,20 +1,16 @@
 package be.technifutur.model.forms;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Data
 @Builder
-public class UsersForm {
+public class UserForm {
 
     @NotBlank
     @Size(min = 1, max = 50)

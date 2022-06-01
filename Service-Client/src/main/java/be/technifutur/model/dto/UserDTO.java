@@ -7,7 +7,7 @@ import java.util.Date;
 
 @Data
 @Builder
-public class UsersDTO {
+public class UserDTO {
 
     private Long id;
     private String nom;

@@ -16,7 +16,7 @@ import java.util.Date;
 @Data
 @Entity
 @Builder
-public class Users {
+public class User {
 
     @Id
     //PK générée auto via la strategie IDENTITY
