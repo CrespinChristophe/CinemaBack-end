@@ -24,7 +24,7 @@ public class DatabaseFiller implements InitializingBean {
                 .nom("Crespin")
                 .prenom("Christophe")
                 .adresse("rue des gagnants")
-                
+
 
     }
 }
