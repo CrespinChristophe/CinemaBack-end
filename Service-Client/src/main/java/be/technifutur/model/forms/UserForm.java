@@ -25,7 +25,7 @@ public class UserForm {
     private String adresse;
 
     @NotBlank
-    private Date dateNaissance;
+    private String dateNaissance;
 
     @NotBlank
     @Size(min = 1, max = 13)

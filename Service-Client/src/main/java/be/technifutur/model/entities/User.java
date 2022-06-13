@@ -38,7 +38,7 @@ public class User {
 
     @NotNull
     @Column(nullable = false)
-    private Date dateNaissance;
+    private String dateNaissance;
 
     @NotNull
     @Column(nullable = false, length = 13)

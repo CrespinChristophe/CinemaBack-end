@@ -13,7 +13,7 @@ public class UserDTO {
     private String nom;
     private String prenom;
     private String adresse;
-    private Date dateNaissance;
+    private String dateNaissance;
     private String numeroTel;
     private String email;
 
