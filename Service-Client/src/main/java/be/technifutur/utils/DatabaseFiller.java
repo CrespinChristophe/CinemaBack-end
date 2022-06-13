@@ -1,4 +1,4 @@
-package be.technifutur.utils;
+/*package be.technifutur.utils;
 
 
 import be.technifutur.data.UserRepository;
@@ -62,4 +62,4 @@ public class DatabaseFiller implements InitializingBean {
 
 
     }
-}
+}*/
