@@ -35,7 +35,7 @@ public class DatabaseFiller implements InitializingBean {
 
         repository.save(u);
 
-        User v = User.builder()
+        u = User.builder()
                 .id(2L)
                 .nom("Malo")
                 .prenom("Laurence")
@@ -45,9 +45,9 @@ public class DatabaseFiller implements InitializingBean {
                 .email("turlututu@chapeaupointu")
                 .build();
 
-        repository.save(v);
+        repository.save(u);
 
-        User w = User.builder()
+        u = User.builder()
                 .id(3L)
                 .nom("Crespin")
                 .prenom("Alphonse")
@@ -57,10 +57,10 @@ public class DatabaseFiller implements InitializingBean {
                 .email("turlututu@chapeaupointu")
                 .build();
 
-        repository.save(w);
+        repository.save(u);
 
 
-        User x = User.builder()
+        u = User.builder()
                 .id(4L)
                 .nom("Torvalds")
                 .prenom("Linus")
@@ -70,7 +70,7 @@ public class DatabaseFiller implements InitializingBean {
                 .email("turlututu@chapeaupointu")
                 .build();
 
-        repository.save(x);
+        repository.save(u);
 
 
 

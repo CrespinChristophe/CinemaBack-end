@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserController {
 
 private UserService service;
 
 @GetMapping
-public List<UserDTO> getAllUser(){return service.getAllUsers();}
+public List<UserDTO> getAllUsers(){return service.getAllUsers();}
 
 }
