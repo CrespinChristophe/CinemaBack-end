@@ -14,7 +14,11 @@ public class UserController {
 
 private UserService service;
 
-@GetMapping
+    public UserController(UserService service) {
+        this.service = service;
+    }
+
+    @GetMapping
 public List<UserDTO> getAllUsers(){return service.getAllUsers();}
 
 }
