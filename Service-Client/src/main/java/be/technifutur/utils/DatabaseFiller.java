@@ -1,4 +1,4 @@
-/*package be.technifutur.utils;
+package be.technifutur.utils;
 
 
 import be.technifutur.data.UserRepository;
@@ -10,6 +10,11 @@ import org.springframework.context.annotation.Configuration;
 public class DatabaseFiller implements InitializingBean {
 
     private UserRepository repository;
+
+
+    public DatabaseFiller(UserRepository repository) {
+        this.repository = repository;
+    }
 
     @Override
     public void afterPropertiesSet() throws Exception {
@@ -30,8 +35,8 @@ public class DatabaseFiller implements InitializingBean {
 
         repository.save(u);
 
-        u = User.builder()
-                .id(1L)
+        User v = User.builder()
+                .id(2L)
                 .nom("Malo")
                 .prenom("Laurence")
                 .adresse("rue des malo")
@@ -40,8 +45,10 @@ public class DatabaseFiller implements InitializingBean {
                 .email("turlututu@chapeaupointu")
                 .build();
 
-        u = User.builder()
-                .id(1L)
+        repository.save(v);
+
+        User w = User.builder()
+                .id(3L)
                 .nom("Crespin")
                 .prenom("Alphonse")
                 .adresse("rue des stappes")
@@ -50,8 +57,11 @@ public class DatabaseFiller implements InitializingBean {
                 .email("turlututu@chapeaupointu")
                 .build();
 
-        u = User.builder()
-                .id(1L)
+        repository.save(w);
+
+
+        User x = User.builder()
+                .id(4L)
                 .nom("Torvalds")
                 .prenom("Linus")
                 .adresse("rue des génies")
@@ -60,6 +70,9 @@ public class DatabaseFiller implements InitializingBean {
                 .email("turlututu@chapeaupointu")
                 .build();
 
+        repository.save(x);
+
+
 
     }
-}*/
+}
